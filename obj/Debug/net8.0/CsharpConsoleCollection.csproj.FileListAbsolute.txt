@@ -12,3 +12,4 @@ C:\Users\gurk_\OneDrive\Dokument\Programmering\Csharp\CsharpConsoleCollection\ob
 C:\Users\gurk_\OneDrive\Dokument\Programmering\Csharp\CsharpConsoleCollection\obj\Debug\net8.0\CsharpConsoleCollection.pdb
 C:\Users\gurk_\OneDrive\Dokument\Programmering\Csharp\CsharpConsoleCollection\obj\Debug\net8.0\CsharpConsoleCollection.genruntimeconfig.cache
 C:\Users\gurk_\OneDrive\Dokument\Programmering\Csharp\CsharpConsoleCollection\obj\Debug\net8.0\ref\CsharpConsoleCollection.dll
+C:\Users\gurk_\OneDrive\Dokument\Programmering\Csharp\CsharpConsoleCollection\obj\Debug\net8.0\CsharpConsoleCollection.sourcelink.json

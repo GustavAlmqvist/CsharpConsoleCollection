@@ -71,18 +71,9 @@ public class TemperatureConversions
     }
     void CtoF(string? TempC)
     {
-        //double C = Convert.ToDouble(TempC);
-        bool inputConversion = double.TryParse(TempC, out double C);
-        
-        if (inputConversion == true)
-        {
+        double C = Convert.ToDouble(TempC);
         double F = C * 1.8 + 32;
         Console.WriteLine($"Result: {TempC} Celsius equals {F:F} Fahrenheit.");
-        }
-        else
-        {
-            Console.WriteLine("Conversion of your input failed, please enter it in a valid format e.g. '3' not 'three'");
-        }
     }
     double CtoK(string? TempC)
     {

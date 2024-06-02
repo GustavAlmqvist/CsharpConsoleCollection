@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CsharpConsoleCollection")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ca29bd7544ca0d4d668fb37e4cc44faa72d0b0c")]
 [assembly: System.Reflection.AssemblyProductAttribute("CsharpConsoleCollection")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CsharpConsoleCollection")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
