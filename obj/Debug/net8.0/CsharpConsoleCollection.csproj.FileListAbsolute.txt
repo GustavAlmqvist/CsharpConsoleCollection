@@ -1,0 +1,14 @@
+C:\Users\gurk_\OneDrive\Dokument\Programmering\Csharp\CsharpConsoleCollection\bin\Debug\net8.0\CsharpConsoleCollection.exe
+C:\Users\gurk_\OneDrive\Dokument\Programmering\Csharp\CsharpConsoleCollection\bin\Debug\net8.0\CsharpConsoleCollection.deps.json
+C:\Users\gurk_\OneDrive\Dokument\Programmering\Csharp\CsharpConsoleCollection\bin\Debug\net8.0\CsharpConsoleCollection.runtimeconfig.json
+C:\Users\gurk_\OneDrive\Dokument\Programmering\Csharp\CsharpConsoleCollection\bin\Debug\net8.0\CsharpConsoleCollection.dll
+C:\Users\gurk_\OneDrive\Dokument\Programmering\Csharp\CsharpConsoleCollection\bin\Debug\net8.0\CsharpConsoleCollection.pdb
+C:\Users\gurk_\OneDrive\Dokument\Programmering\Csharp\CsharpConsoleCollection\obj\Debug\net8.0\CsharpConsoleCollection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gurk_\OneDrive\Dokument\Programmering\Csharp\CsharpConsoleCollection\obj\Debug\net8.0\CsharpConsoleCollection.AssemblyInfoInputs.cache
+C:\Users\gurk_\OneDrive\Dokument\Programmering\Csharp\CsharpConsoleCollection\obj\Debug\net8.0\CsharpConsoleCollection.AssemblyInfo.cs
+C:\Users\gurk_\OneDrive\Dokument\Programmering\Csharp\CsharpConsoleCollection\obj\Debug\net8.0\CsharpConsoleCollection.csproj.CoreCompileInputs.cache
+C:\Users\gurk_\OneDrive\Dokument\Programmering\Csharp\CsharpConsoleCollection\obj\Debug\net8.0\CsharpConsoleCollection.dll
+C:\Users\gurk_\OneDrive\Dokument\Programmering\Csharp\CsharpConsoleCollection\obj\Debug\net8.0\refint\CsharpConsoleCollection.dll
+C:\Users\gurk_\OneDrive\Dokument\Programmering\Csharp\CsharpConsoleCollection\obj\Debug\net8.0\CsharpConsoleCollection.pdb
+C:\Users\gurk_\OneDrive\Dokument\Programmering\Csharp\CsharpConsoleCollection\obj\Debug\net8.0\CsharpConsoleCollection.genruntimeconfig.cache
+C:\Users\gurk_\OneDrive\Dokument\Programmering\Csharp\CsharpConsoleCollection\obj\Debug\net8.0\ref\CsharpConsoleCollection.dll
