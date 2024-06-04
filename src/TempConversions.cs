@@ -2,6 +2,47 @@ public class TemperatureConversions
 {
     public void ChooseTempConversion()
     {
+        Display();
+        Choose();
+        
+    }
+    void CtoF(double TempC)
+    {
+        double F = TempC * 1.8 + 32;
+        Console.WriteLine($"Result: {TempC} Celsius equals {F:F} Fahrenheit.");
+    }
+    double CtoK(double TempC)
+    {
+        double K = TempC + 273.15;
+        Console.WriteLine($"Result: {TempC} Celsius equals {K:F} Kelvin.");
+        return K;
+    }
+    double FtoC(double TempF)
+    {
+        double C = (TempF - 32) * 1.8;
+        Console.WriteLine($"Result: {TempF} Fahrenheit equals {C:F} Celsius.");
+        return C;
+    }
+        double FtoK(double TempF)
+    {
+        double K = (TempF - 32) * 1.8 + 273.15;
+        Console.WriteLine($"Result: {TempF} Fahrenheit equals {K:F} Kelvin.");
+        return K;
+    }
+        double KtoC(double TempK)
+    {
+        double C = TempK - 273.15;
+        Console.WriteLine($"Result: {TempK} Kelvin equals {C:F} Celsius.");
+        return C;
+    }
+        double KtoF(double TempK)
+    {
+        double F = (TempK - 273.15) * 1.8 + 32;
+        Console.WriteLine($"Result: {TempK} Kelvin equals {F:F} Fahrenheit.");
+        return F;
+    }
+    void Display()
+    {
         Console.WriteLine("Please select which units of temperature you are converting between:");
         Console.WriteLine("1. Celsius to Fahrenheit");
         Console.WriteLine("2. Celsius to Kelvin");
@@ -9,11 +50,19 @@ public class TemperatureConversions
         Console.WriteLine("4. Fahrenheit to Kelvin");
         Console.WriteLine("5. Kelvin to Celsius");
         Console.WriteLine("6. Kelvin to Fahrenheit");
+    }
+    void SubMenuPrompt()
+    {
+        Console.WriteLine();
+        Console.WriteLine("Choose a menu option or type 'exit' to go back to the mainmeu.");
+    }
+    void Choose()
+    {
 
         bool exit = false;
         ReadInput tempMenuOptions = new ReadInput();
         MainMenu DisplayMainMenu = new MainMenu();
-        string? methodInput;
+        double methodInput;
         string? tempMenuChoice = tempMenuOptions.ReadConsoleInput();
         //Make methods for conversion and enter into switch statements
         do
@@ -27,39 +76,48 @@ public class TemperatureConversions
                     return;
                 case "1":
                     Console.WriteLine("Please enter the temperature in Celsius:");
-                    methodInput = tempMenuOptions.ReadConsoleInput();
+                    methodInput = tempMenuOptions.ReadNumberInput();
+                    //Not clean enough way to display menu. Chosen input and result should still be visible.
+                    //Give option to convert other value in same manner, show menu or exit?
+                    // i.e. stay in same option, go back to submenu or to mainenu.
+                    //Display();
                     CtoF(methodInput);
-                    //Sends you back to tempmenu - add functionality of staying in this option if entry in invalid.
+                    SubMenuPrompt();
                     tempMenuChoice = tempMenuOptions.ReadConsoleInput();
                     break;
                 case "2":
                     Console.WriteLine("Please enter the temperature in Celsius:");
-                    methodInput = tempMenuOptions.ReadConsoleInput();
+                    methodInput = tempMenuOptions.ReadNumberInput();
                     CtoK(methodInput);
+                    SubMenuPrompt();
                     tempMenuChoice = tempMenuOptions.ReadConsoleInput();
                     break;
                 case "3":
                     Console.WriteLine("Please enter the temperature in Fahrenheit:");
-                    methodInput = tempMenuOptions.ReadConsoleInput();
+                    methodInput = tempMenuOptions.ReadNumberInput();
                     FtoC(methodInput);
+                    SubMenuPrompt();
                     tempMenuChoice = tempMenuOptions.ReadConsoleInput();
                     break;
                 case "4":
                     Console.WriteLine("Please enter the temperature in Fahrenheit:");
-                    methodInput = tempMenuOptions.ReadConsoleInput();
+                    methodInput = tempMenuOptions.ReadNumberInput();
                     FtoK(methodInput);
+                    SubMenuPrompt();
                     tempMenuChoice = tempMenuOptions.ReadConsoleInput();
                     break;
                 case "5":
                     Console.WriteLine("Please enter the temperature in Kelvin:");
-                    methodInput = tempMenuOptions.ReadConsoleInput();
+                    methodInput = tempMenuOptions.ReadNumberInput();
                     KtoC(methodInput);
+                    SubMenuPrompt();
                     tempMenuChoice = tempMenuOptions.ReadConsoleInput();
                     break;
                 case "6":
                     Console.WriteLine("Please enter the temperature in Kelvin:");
-                    methodInput = tempMenuOptions.ReadConsoleInput();
+                    methodInput = tempMenuOptions.ReadNumberInput();
                     KtoF(methodInput);
+                    SubMenuPrompt();
                     tempMenuChoice = tempMenuOptions.ReadConsoleInput();
                     break;
                 default:
@@ -68,47 +126,6 @@ public class TemperatureConversions
                     break;
             }
         } while (exit == false);
-    }
-    void CtoF(string? TempC)
-    {
-        double C = Convert.ToDouble(TempC);
-        double F = C * 1.8 + 32;
-        Console.WriteLine($"Result: {TempC} Celsius equals {F:F} Fahrenheit.");
-    }
-    double CtoK(string? TempC)
-    {
-        double C = Convert.ToDouble(TempC);
-        double K = C + 273.15;
-        Console.WriteLine($"Result: {TempC} Celsius equals {K:F} Kelvin.");
-        return K;
-    }
-    double FtoC(string? TempF)
-    {
-        double F = Convert.ToDouble(TempF);
-        double C = (F - 32) * 1.8;
-        Console.WriteLine($"Result: {TempF} Fahrenheit equals {C:F} Celsius.");
-        return C;
-    }
-        double FtoK(string? TempF)
-    {
-        double F = Convert.ToDouble(TempF);
-        double K = (F - 32) * 1.8 + 273.15;
-        Console.WriteLine($"Result: {TempF} Fahrenheit equals {K:F} Kelvin.");
-        return K;
-    }
-        double KtoC(string? TempK)
-    {
-        double K = Convert.ToDouble(TempK);
-        double C = K - 273.15;
-        Console.WriteLine($"Result: {TempK} Kelvin equals {C:F} Celsius.");
-        return C;
-    }
-        double KtoF(string? TempK)
-    {
-        double K = Convert.ToDouble(TempK);
-        double F = (K - 273.15) * 1.8 + 32;
-        Console.WriteLine($"Result: {TempK} Kelvin equals {F:F} Fahrenheit.");
-        return F;
     }
 }
 

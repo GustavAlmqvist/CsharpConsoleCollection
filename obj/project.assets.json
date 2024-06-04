@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\gurk_\\.nuget\\packages\\": {}
+    "/home/gustav/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gurk_\\OneDrive\\Dokument\\Programmering\\Csharp\\CsharpConsoleCollection\\CsharpConsoleCollection.csproj",
+      "projectUniqueName": "/home/gustav/Projects/Programming/CsharpConsoleProjects/CsharpConsoleCollection/CsharpConsoleCollection.csproj",
       "projectName": "CsharpConsoleCollection",
-      "projectPath": "C:\\Users\\gurk_\\OneDrive\\Dokument\\Programmering\\Csharp\\CsharpConsoleCollection\\CsharpConsoleCollection.csproj",
-      "packagesPath": "C:\\Users\\gurk_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gurk_\\OneDrive\\Dokument\\Programmering\\Csharp\\CsharpConsoleCollection\\obj\\",
+      "projectPath": "/home/gustav/Projects/Programming/CsharpConsoleProjects/CsharpConsoleCollection/CsharpConsoleCollection.csproj",
+      "packagesPath": "/home/gustav/.nuget/packages/",
+      "outputPath": "/home/gustav/Projects/Programming/CsharpConsoleProjects/CsharpConsoleCollection/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gurk_\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/gustav/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/245/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
