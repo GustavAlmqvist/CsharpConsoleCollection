@@ -10,12 +10,12 @@ public class ReadInput
         if (ConsoleInput == "")
         {
             Console.WriteLine("Please enter a valid value");
-            ConsoleInput = Console.ReadLine();
+            ReadConsoleInput();
         }
         if (ConsoleInput != null)
         {
-            ConsoleInput.Trim();
-            ConsoleInput.ToLower();
+            ConsoleInput = ConsoleInput.Trim();
+            ConsoleInput = ConsoleInput.ToLower();
         }
         
         return ConsoleInput;
@@ -24,21 +24,37 @@ public class ReadInput
     {
 
         ConsoleInput = Console.ReadLine();
-        //Get rid of warning by putting the contains "," in seperatate if statement?
-        if (ConsoleInput == "" || ConsoleInput.Contains(",") == true)
+        if (ConsoleInput == "")
         {
             Console.WriteLine("Please enter a valid value, non-null, '3' not 'three' and use '.' as decimal");
             ReadNumberInput();
         }
-        
-        bool validNumberInput = double.TryParse(ConsoleInput, out validNumber);
-        
-        if (validNumberInput == false)
+        if (ConsoleInput != null)
         {
-            Console.WriteLine("Please enter a valid value, non-null, '3' not 'three' and use '.' as decimal");
-            ReadNumberInput();
+            bool validNumberInput = double.TryParse(ConsoleInput, out validNumber);
+        
+            if (validNumberInput == false || ConsoleInput.Contains(",") == true)
+            {
+                Console.WriteLine("Please enter a valid value, non-null, '3' not 'three' and use '.' as decimal");
+                ReadNumberInput();
+            }
         }
-
         return validNumber;
     }
+    //Could just use numberinput twice? First for feet then once more for inches.
+    
+    // public double ReadImperialInput()
+    // {
+    //     double ValidFeet;
+    //     double ValidInches;
+    //     ConsoleInput = Console.ReadLine();
+
+    //     if (ConsoleInput == "")
+    //     {
+    //         Console.WriteLine("Please enter a valid value, non-null, '3' not 'three' and use '.' as decimal");
+    //         ReadImperialInput();
+    //     }
+
+    //     return ValidFeet, ValidInches;
+    // }
 }

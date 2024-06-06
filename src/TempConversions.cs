@@ -54,7 +54,7 @@ public class TemperatureConversions
     void SubMenuPrompt()
     {
         Console.WriteLine();
-        Console.WriteLine("Choose a menu option or type 'exit' to go back to the mainmeu.");
+        Console.WriteLine("Choose a menu option, type 'menu' to show the menu, or type 'exit' to go back to the mainmeu.");
     }
     void Choose()
     {
@@ -74,13 +74,13 @@ public class TemperatureConversions
                     DisplayMainMenu.Choose();
                     exit = true;
                     return;
+                case "menu":
+                    Display();
+                    Choose();
+                    break;
                 case "1":
                     Console.WriteLine("Please enter the temperature in Celsius:");
                     methodInput = tempMenuOptions.ReadNumberInput();
-                    //Not clean enough way to display menu. Chosen input and result should still be visible.
-                    //Give option to convert other value in same manner, show menu or exit?
-                    // i.e. stay in same option, go back to submenu or to mainenu.
-                    //Display();
                     CtoF(methodInput);
                     SubMenuPrompt();
                     tempMenuChoice = tempMenuOptions.ReadConsoleInput();

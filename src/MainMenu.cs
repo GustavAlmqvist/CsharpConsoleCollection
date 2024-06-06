@@ -29,13 +29,12 @@ public class MainMenu
                     System.Environment.Exit(0);
                     return;
                 case "1":
-                    TemperatureConversions chosenMainOption = new TemperatureConversions();
-                    chosenMainOption.ChooseTempConversion();
+                    TemperatureConversions tempMainOption = new TemperatureConversions();
+                    tempMainOption.ChooseTempConversion();
                     break;
                 case "2":
-                    DisplayMainMenu.Display();
-                    Console.WriteLine("Under construction, please check back at a later date.");
-                    mainMenuChoice = mainMenuOptions.ReadConsoleInput();
+                    LengthConversions lengthMainOption = new LengthConversions();
+                    lengthMainOption.ChooseLengthConversion();
                     break;
                 case "3":
                     DisplayMainMenu.Display();

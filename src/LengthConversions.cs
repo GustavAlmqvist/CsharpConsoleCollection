@@ -15,7 +15,7 @@ public class LengthConversions()
         bool exit = false;
         ReadInput lengthMenuOptions = new ReadInput();
         MainMenu DisplayMainMenu = new MainMenu();
-        string? methodInput;
+        double methodInput;
         string? lengthMenuChoice = lengthMenuOptions.ReadConsoleInput();
         //Make methods for conversion and enter into switch statements
         do
@@ -29,20 +29,14 @@ public class LengthConversions()
                     return;
                 case "1":
                     Console.WriteLine("Please enter the value you wish to convert in centimeters:");
-                    methodInput = lengthMenuOptions.ReadConsoleInput();
-                   // CmToFeetAndInches(methodInput);
+                    methodInput = lengthMenuOptions.ReadNumberInput();
+                    Console.WriteLine($"{CmToFeetAndInches(methodInput)}");
                     lengthMenuChoice = lengthMenuOptions.ReadConsoleInput();
                     break;
                 case "2":
                     Console.WriteLine("Please enter the value you wish to convert in centimeters:");
-                    methodInput = lengthMenuOptions.ReadConsoleInput();
-                   // CmToFeetAndInches(methodInput);
-                    lengthMenuChoice = lengthMenuOptions.ReadConsoleInput();
-                    break;
-                case "3":
-                    Console.WriteLine("Please enter the value you wish to convert in feet and inches:");
-                    methodInput = lengthMenuOptions.ReadConsoleInput();
-                   // CmToFeetAndInches(methodInput);
+                    methodInput = lengthMenuOptions.ReadNumberInput();
+                    Console.WriteLine($"Result: {methodInput}cm is {CmToInches(methodInput):F2} inches.");
                     lengthMenuChoice = lengthMenuOptions.ReadConsoleInput();
                     break;
                 default:
@@ -53,9 +47,28 @@ public class LengthConversions()
         } while (exit == false);
     }
 
-//     string CmToFeetAndInches(string? cm)
-//     {
-//         float inches = float.Parse(cm); 
-//         return cm;
-//     }
+    double CmToFeet(double cm)
+    {
+        double feet = cm / 30.48;
+        return feet;
+    }
+        double CmToInches(double cm)
+    {
+        double inches = cm / 2.54;
+        return inches;
+    }
+    string CmToFeetAndInches(double cm)
+    {
+        string result;
+        double feet = 0;
+        double inches = 0;
+        double cmCalc = 0;
+
+        feet = (int) CmToFeet(cm);
+        cmCalc = cm - (feet * 30.48);
+        inches = CmToInches(cmCalc);
+        result = $"Result: {cm}cm is {feet} feet and {inches:F2} inches.";
+
+        return result;
+    }
 }
